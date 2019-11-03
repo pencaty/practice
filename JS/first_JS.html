@@ -36,25 +36,33 @@
 		document.querySelector('body').dataset.mode = 'day';
 	</script>
 
-	<input type="button" value="change" onclick="
-		if(document.querySelector('body').dataset.mode === 'day'){
+	<input type="button" value="night" onclick="
+		document.querySelector('body').style.backgroundColor='black';
+		document.querySelector('body').style.color='white'
+	">
+	<input type="button" value="day" onclick="
+		document.querySelector('body').style.backgroundColor='white';
+		document.querySelector('body').style.color='black'
+	">
+	<br>
+	<input id="day_night" type="button" value="night" onclick="
+		if(document.querySelector('#day_night').value === 'night'){
 			document.querySelector('body').style.backgroundColor='black';
 			document.querySelector('body').style.color='white';
-			document.querySelector('body').dataset.mode = 'night';
-			this.value = 'white';
+			document.querySelector('#day_night').value = 'day'
 		}	
 		else{
 			document.querySelector('body').style.backgroundColor='white';
 			document.querySelector('body').style.color='black';
-			document.querySelector('body').dataset.mode = 'day';
-			this.value = 'black'
+			document.querySelector('#day_night').value = 'night'
 		}
 	">
+	<!--
 	<h1 style="color:powderblue; background-color:coral">h1</h1>
 	<h2>h2</h2>
 	<p>Text</p>
 	<span style="font-weight: bold;">Java</span>Script
-
+	-->
 	<script type="text/javascript">
 		
 	</script>

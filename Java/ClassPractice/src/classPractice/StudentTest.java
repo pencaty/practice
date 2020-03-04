@@ -22,20 +22,32 @@ public class StudentTest {
 
 	public static void main(String[] args) {
 
-		Student Lee = new Student();
+		Student Lee = new Student(100, "Lee");
+		
+		/*
 		Lee.studentName = "Lee";
 		Lee.address = "Daejeon";
+		*/
+		
+		Lee.setKoreaSubject("korea", 81);
+		Lee.setMathSubject("math", 79);
 		
 		Lee.showStudentInfo();
 		
 		Student Son = new Student(172, "Son");
 		Son.showStudentInfo();
 		
+		Son.setKoreaSubject("korea", 100);
+		Son.setMathSubject("math", 95);
+		
 		System.out.println(addNum(3,5));
 		
 		sayHello("Hello Java");
 		
 		System.out.println(calcSum());
+		
+		Lee.showStudentScore();
+		Son.showStudentScore();
 		
 	}
 

@@ -2,29 +2,37 @@ package classPractice;
 
 public class Student {
 	
-	//public int studentID;
-	public int id;
+	public int studentID;
 	public String studentName;
-	public String address;
 	public boolean graduated;
+	
+	private static int id = 1000;
 	
 	Subject korea;
 	Subject math;
 	
 	public Student() {
-		this(0, "No Name");
+		this("No Name");
 	}
 	
-	public Student(int id, String name) {
-		//studentID = id;
-		this.id = id;
+	public Student(String name) {
+		studentID = id;
 		studentName = name;
-		address = "No Address";
+		id++;
 		
 		korea = new Subject();
 		math = new Subject();
 	}
 	
+
+	public static int getId() {
+		return id;
+	}
+
+	public static void setId(int id) {
+		Student.id = id;
+	}
+
 	public void setKoreaSubject(String name, int score) {
 		korea.subjectName = name;
 		korea.score = score;
@@ -36,7 +44,7 @@ public class Student {
 	}
 	
 	public void showStudentInfo() { // method
-		System.out.println(studentName + "," + address);
+		System.out.println(studentName + "," + this.id);
 	}
 	
 	public void showStudentScore() {

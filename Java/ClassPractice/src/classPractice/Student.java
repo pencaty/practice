@@ -2,7 +2,8 @@ package classPractice;
 
 public class Student {
 	
-	public int studentID;
+	//public int studentID;
+	public int id;
 	public String studentName;
 	public String address;
 	public boolean graduated;
@@ -10,10 +11,13 @@ public class Student {
 	Subject korea;
 	Subject math;
 	
-	public Student() {}
+	public Student() {
+		this(0, "No Name");
+	}
 	
 	public Student(int id, String name) {
-		studentID = id;
+		//studentID = id;
+		this.id = id;
 		studentName = name;
 		address = "No Address";
 		

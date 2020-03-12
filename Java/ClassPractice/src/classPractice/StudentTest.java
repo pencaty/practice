@@ -40,6 +40,9 @@ public class StudentTest {
 		Son.setKoreaSubject("korea", 100);
 		Son.setMathSubject("math", 95);
 		
+		Student No = new Student();
+		No.showStudentInfo();
+		
 		System.out.println(addNum(3,5));
 		
 		sayHello("Hello Java");

@@ -14,5 +14,10 @@ public class CalcTest {
 		System.out.println(calc.divide(n1, n2));
 		
 		calc.showInfo();
+		
+		calc.description();
+		
+		int[] arr = {1,2,3,4,5};
+		int sum = Calc.total(arr); // static 선언 -> instance 선언과 상관 없이
 	}
 }

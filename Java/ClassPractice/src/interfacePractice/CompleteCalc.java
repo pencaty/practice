@@ -19,4 +19,13 @@ public class CompleteCalc extends Calculator {
 		System.out.println("All completed");
 	}
 
+	@Override
+	public void description() {
+		// TODO Auto-generated method stub
+		//super.description();
+		System.out.println("re-implemented calculator");
+	}
+	
+	
+
 }

@@ -1,4 +1,4 @@
-package iostream.decorator;
+package stream.decorator;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

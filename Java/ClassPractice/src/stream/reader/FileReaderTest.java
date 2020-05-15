@@ -1,4 +1,4 @@
-package iostream.reader;
+package stream.reader;
 
 import java.io.FileInputStream;
 import java.io.IOException;

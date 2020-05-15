@@ -1,4 +1,4 @@
-package stream;
+package arrayStream;
 
 import java.util.Arrays;
 
